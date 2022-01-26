@@ -1,0 +1,11 @@
+.scrollBox{
+    overflow-y: scroll;
+    direction: rtl;
+    line-height: 3em;
+    width: 633px;
+    height: 785px;
+}
+
+.content{
+    direction: ltr;
+}
