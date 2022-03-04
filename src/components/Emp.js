@@ -6,8 +6,8 @@ export default function Emp(props) {
     return (
         <div className={style.emp}>
             <label className={style.container}>{name}
-            <input className={style.checkbox} type="checkbox" name="" id="" />
-            <span className={style.checkmark}></span>
+                <input className={style.checkbox} type="checkbox" name="" id="" />
+                <span className={style.checkmark}></span>
             </label>
         </div>
     )

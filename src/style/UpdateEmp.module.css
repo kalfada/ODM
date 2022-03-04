@@ -1,0 +1,59 @@
+.update_page {
+    padding-top: 212px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Link {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.edit_text {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.person_name {
+    margin-top: 23px;
+    font-size: 34px;
+}
+
+.btns{
+    margin-top: 54px;
+}
+
+.button {
+    font-size: 18px;
+    width: 147px;
+    height: 55px;
+    margin-right: 21px;
+    border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.update_btn {
+    background-color: #2F80ED;
+    color: white;
+}
+
+.update_btn:hover {
+    background-color: #333333;
+}
+
+.cancel_btn {
+    background-color: #F9F9F9;
+    color: #797979;
+}
+

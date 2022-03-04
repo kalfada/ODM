@@ -12,8 +12,8 @@ export default function EmpList() {
     return (
         <div className={style.emplist}>
             {empList.map(emp =>
-                <Emp key={emp._id} {...emp}/>
-                )}
+                <Emp key={emp._id} {...emp} />
+            )}
         </div>
     )
 }

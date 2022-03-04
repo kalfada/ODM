@@ -3,4 +3,31 @@
     width: 595px;
     height: 252px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.income_compare{
+    font-family: roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.employee{
+    display: flex;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 300px;
+    height: 330px;
+}
+
+.first_employee{
+    background-color: #2F80ED;
+    color: white;
+}
+
+.second_employee{
+    background-color: #F2994A;
+    color: white;
 }
