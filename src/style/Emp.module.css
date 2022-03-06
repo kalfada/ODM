@@ -1,9 +1,17 @@
+.emp{
+    display: flex;
+}
+
 .label {
     display: flex;
     align-items: center;
     cursor: pointer;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
+}
+
+.disabled{
+    color: #828282;
 }
 
 .checkbox {
@@ -30,12 +38,22 @@
 
 .edit_btn{
     display: none;
-    position: relative;
-    right: 40px;
+    transition: 0.5s;
 }
 
+.label:hover + .edit_btn{
+    display: inline;
+    color: #828282;
+    background-color: white;
+    border: none;
+    display: inline;
+    transition: 0.5s;
+}
 .edit_btn:hover{
-    right: 0;
+    display: inline;
+    color: black;
+    background-color: white;
+    border: none;
     display: inline;
     transition: 0.5s;
 }

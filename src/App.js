@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Body />} />
-        <Route path=":id" element={<UpdateEmp />} />
+        <Route path="/edit/:id" element={<UpdateEmp />} />
       </Routes>
       <Footer />
     </div>

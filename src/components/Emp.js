@@ -6,23 +6,23 @@ import { EmployeesContext } from './Body'
 export default function Emp(props) {
     const { chosenEmps, setChosenEmps } = useContext(EmployeesContext)
     const navigate = useNavigate()
+    const { disabled } = props
     const { name, _id } = props.emp
 
     function addEmp(event) {
         event.target.checked ?
             setChosenEmps([...chosenEmps, props.emp]) :
             setChosenEmps(chosenEmps.filter(e => e._id != _id))
-        console.log(chosenEmps);
     }
 
     function edit() {
-        navigate(`/${_id}`)
+        navigate(`/edit/${_id}`)
     }
 
     return (
         <div className={style.emp}>
-            <label className={style.label}>
-                <input className={style.checkbox} type="checkbox" onChange={addEmp} />
+            <label className={disabled ? `${style.label} ${style.disabled}` : style.label}>
+                <input className={style.checkbox} type="checkbox" onChange={addEmp} disabled={disabled} />
                 {name}
             </label>
             <button className={style.edit_btn} onClick={edit}>edit</button>

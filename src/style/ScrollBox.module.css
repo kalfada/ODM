@@ -2,8 +2,9 @@
     overflow-y: scroll;
     direction: rtl;
     line-height: 3em;
-    width: 400px;
-    height: 450px;
+    width: 500px;
+    height: 600px;
+    margin-right: 55px;
     box-shadow: inset -2px 2px 7px rgba(0, 0, 0, 0.28);
 }
 
