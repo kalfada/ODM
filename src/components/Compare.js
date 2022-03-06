@@ -8,10 +8,6 @@ export default function Compare() {
     return (
         chosenEmps.length == 2 ?
             <div className={style.compare}>
-                Pick 2 Employees and see who earns the most
-            </div>
-            :
-            <div className={style.compare}>
                 <span>
                     So...<br />Who earns the most?
                 </span>
@@ -20,6 +16,10 @@ export default function Compare() {
                     <div className={style.employee}>Vs.</div>
                     <div className={`${style.second_employee} ${style.employee}`}>Shira</div>
                 </div>
+            </div>
+            :
+            <div className={style.compare}>
+                Pick 2 Employees and see who earns the most
             </div>
     )
 }
