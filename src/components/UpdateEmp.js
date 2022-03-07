@@ -11,7 +11,7 @@ export default function UpdateEmp() {
     const [updateTxt, setUpdateTxt] = useState(false)
 
     function getEmp() {
-        axios.get(`http://localhost:3000/users/${id}`)
+        axios.get(`https://odm-backend.herokuapp.com/users/${id}`)
             .then(res => {
                 const { address, phone, email, maritalStatus, gender, name } = res.data
                 setFormData({ address, phone, email, maritalStatus, gender, name })
@@ -20,7 +20,7 @@ export default function UpdateEmp() {
 
     function submitMe(event) {
         event.preventDefault()
-        axios.put(`http://localhost:3000/users/${id}`, formData)
+        axios.put(`https://odm-backend.herokuapp.com/users/${id}`, formData)
         setUpdateTxt(true)
     }
 

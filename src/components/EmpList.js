@@ -8,7 +8,7 @@ import { EmployeesContext } from './Body'
 export default function EmpList() {
     const { chosenEmps } = useContext(EmployeesContext)
     const [empList, setEmpList] = useState([])
-    useEffect(() => axios.get('http://localhost:3000/users')
+    useEffect(() => axios.get('https://odm-backend.herokuapp.com/users')
         .then(res => setEmpList(res.data)), [])
 
 
