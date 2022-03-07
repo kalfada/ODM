@@ -43,17 +43,27 @@
 
 .label:hover + .edit_btn{
     display: inline;
+    padding-left: 18px;
     color: #828282;
     background-color: white;
     border: none;
-    display: inline;
     transition: 0.5s;
+    cursor: pointer;
 }
 .edit_btn:hover{
     display: inline;
+    padding-left: 18px;
     color: black;
     background-color: white;
     border: none;
-    display: inline;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.svg{
+    font-size: 12px;
+    margin-right: 9px;
+    border: 1px solid #FDC733;
+    border-radius: 50%;
+    padding: 4px;
 }

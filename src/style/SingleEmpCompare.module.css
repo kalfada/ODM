@@ -1,0 +1,48 @@
+.employee {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 300px;
+    height: 330px;
+    background-color: #2F80ED;
+    color: white;
+}
+
+.first_employee {
+    background-color: #2F80ED;
+    color: white;
+}
+
+.second_employee {
+    background-color: #F2994A;
+    color: white;
+}
+
+.hr {
+    margin: 0 25px;
+}
+
+.diff {
+    font-size: 24px;
+}
+
+.compare_text {
+    margin: 20px 0;
+}
+
+.arrow_up {
+    display: inline-block;
+    border-left: 9.5px solid transparent;
+    border-right: 9.5px solid transparent;
+    border-bottom: 19px solid black;
+}
+
+.arrow_down {
+    display: inline-block;
+    border-left: 9.5px solid transparent;
+    border-right: 9.5px solid transparent;
+    border-top: 19px solid black;
+}

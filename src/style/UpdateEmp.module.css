@@ -57,3 +57,10 @@
     color: #797979;
 }
 
+.update_text{
+    display: none;
+}
+
+.update_text_vis{
+    display: block;
+}

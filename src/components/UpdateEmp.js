@@ -8,28 +8,27 @@ export default function UpdateEmp() {
     const { id } = useParams()
 
     const [formData, setFormData] = useState({ address: '', phone: '', email: '', maritalStatus: '', gender: '' })
+    const [updateTxt, setUpdateTxt] = useState(false)
 
-    useEffect(() => {
+    function getEmp() {
         axios.get(`http://localhost:3000/users/${id}`)
             .then(res => {
-                const { address, phone, email, maritalStatus, gender ,name} = res.data
-                setFormData({ address, phone, email, maritalStatus, gender ,name})
+                const { address, phone, email, maritalStatus, gender, name } = res.data
+                setFormData({ address, phone, email, maritalStatus, gender, name })
             })
-    }, [])
-
+    }
 
     function submitMe(event) {
         event.preventDefault()
         axios.put(`http://localhost:3000/users/${id}`, formData)
+        setUpdateTxt(true)
     }
 
     const change = (event) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
     };
 
-    function resetForm(event) {
-        event.preventDefault()
-    }
+    useEffect(getEmp, [])
 
     return (
         <div className={style.update_page}>
@@ -44,8 +43,9 @@ export default function UpdateEmp() {
                 <CustomInput name='Gender' text={formData.gender} onChangeFn={change} />
                 <div className={style.btns}>
                     <input className={`${style.button} ${style.update_btn}`} type="submit" value="Update" />
-                    <button className={`${style.button} ${style.cancel_btn}`} onClick={resetForm}>Cancel</button>
+                    <input type="button" value="Cancel" className={`${style.button} ${style.cancel_btn}`} onClick={getEmp} />
                 </div>
+                <div className={`${updateTxt ? style.update_text_vis : style.update_text}`}>Details Updated</div>
             </form>
         </div>
     )

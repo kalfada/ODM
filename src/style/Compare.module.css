@@ -1,13 +1,18 @@
 .compare{
     font-size: 72px;
-    width: 595px;
+    width: 831px;
     height: 252px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
+.compare_text{
+    display: flex;
+    align-self: center;
+}
+
 .income_compare{
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -15,19 +20,28 @@
 
 .employee{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
     font-weight: bolder;
     font-size: 40px;
-    width: 300px;
+    width: 231px;
     height: 330px;
 }
 
-.first_employee{
-    background-color: #2F80ED;
-    color: white;
+.vs{
+    font-size: 34px;
 }
 
-.second_employee{
-    background-color: #F2994A;
-    color: white;
+.hr{
+    margin: 0 25px;
+    color: black;
+}
+
+.yearly{
+    font-size: 24px;
+}
+
+.compare_text{
+    margin: 20px 0;
 }
